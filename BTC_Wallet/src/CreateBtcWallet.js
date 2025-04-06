@@ -6,9 +6,9 @@ const bitcoin = require("bitcoinjs-lib")
 //Definindo a rede:
 //Rede principal - mainnet
 //Rede de testes - testnet
-const network = bitcoin.networks.mainnet //Caso queira criar na rede principal, troque por mainnet
+const network = bitcoin.networks.mainnet //Caso queira criar na rede teste, troque por testnet
 
-const path = `m/49'/0'/0'/0` //Caso seja na mainnet, troque por `m/49'/1'/0'/0`
+const path = `m/49'/0'/0'/0` //Caso seja na testnet, troque por `m/49'/1'/0'/0`
 
 let mnemonic = bip39.generateMnemonic() //Gerando conjunto de palavras
 const seed = bip39.mnemonicToSeedSync(mnemonic)//Criando a SEED
