@@ -23,11 +23,9 @@ let btcAddress = bitcoin.payments.p2pkh({
     network: network,
 }).address
 
-console.log("---------------------------------------------------------")
+console.log("-------------------------------------------------------------------------------------")
 console.log("Carteira gerada com secesso!")
-
 console.log(`Endereço: ${btcAddress}`)
 console.log("Chave privada:", node.toWIF())
 console.log(`Seed: ${mnemonic}`)
-console.log()
-console.log("---------------------------------------------------------")
+console.log("-------------------------------------------------------------------------------------")
